@@ -2,32 +2,337 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>Progress</title>
+  <title>Progress Bars with Labels</title>
   <style>
-    .progress-container {
-    .progress-bar {
-      height: 100%;
-      width: 40%; /* هنا تتحكم بالنسبة */
-      width: 40%محمد;
-      width: 40%قاسم;
-      width: 40%;
-      background: linear-gradient(to right, green, blue);
-      border-radius: 20px;
-      text-align: center;
-      color: white;
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl; /* حتى النصوص بالعربي */
+      padding: 20px;
+      background: #ff0080;
+    }
+
+    .progress-wrapper {
+      margin-bottom: 25px;
+    }
+
+    .label {
+      margin-bottom: 5px;
       font-weight: bold;
+    }
+
+    .progress-container {
+      width: 60%;
+      background-color: #ffffff;
+      border-radius: 25px;
+      overflow: hidden;
+      height: 30px;
+    }
+
+    .progress-bar {
+      height: 30px;
+      width: 0;
+      background-color: #121b1a;
+      text-align: center;
       line-height: 30px;
+      color: rgb(255, 0, 179);
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h1>🌟 نسبة نقوصات يتم ارجاع نسبه عاليه 🌟</h1>
-   <h2>🌟 يتم ارجاع رجعا يتم ارجاع🌟</h2>
-  <div class="progress-container">
-    <div class="progress-bar">40%</div>
-    <div class="progress-bar">محمد40%</div>
-    <div class="progress-bar">40%قاسم</div>
-    <div class="progress-bar">40%</div>
+   <div class="progress-wrapper">
+    <div class="label"> باسم</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar1">0%</div>
+    </div>
   </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> جاسم</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar2">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> سجاد</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar3">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> سما</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar4">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> عباس</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar5">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> عقيل</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar6">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> قاسم</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar7">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> كاضم</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar8">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> كرار</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar9">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> مجتبى</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar10">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> محسن</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar11">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> محممد</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar12">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> مسلم</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar13">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> مصطفى</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar14">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> مهيمن</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar15">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> مود</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar16">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> موسى</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar17">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> مومن</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar18">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> وافي</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar19">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> علي</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar20">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> رسول</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar21">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> جبار</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar22">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> عبدالله</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar23">0%</div>
+    </div>
+  </div>
+    
+    <div class="label"> صلاح</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar24">0%</div>
+    </div>
+  </div>
+  <div class="progress-wrapper">
+    <div class="label"> مهدي </div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar25">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> جبر</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar26">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> علاء</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar27">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> عدنان</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar28">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> سيف</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar29">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> موفق</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar30">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> نواف</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar31">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> مزعل</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar32">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> جميل</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar33">0%</div>
+    </div>
+  </div>
+    
+  <div class="progress-wrapper">
+    <div class="label"> صبار</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar34">0%</div>
+    </div>
+  </div>
+  <div class="progress-wrapper">
+    <div class="label"> امجد</div>
+    <div class="progress-container">
+      <div class="progress-bar" id="bar35">0%</div>
+    </div>
+  </div>
+  <script>
+    function animateProgress(id, target) {
+      let progress = 0;
+      const bar = document.getElementById(id);
+
+      function step() {
+        if (progress < target) {
+          progress++;
+          bar.style.width = progress + '%';
+          bar.textContent = progress + '%';
+          requestAnimationFrame(step);
+        }
+      }
+      step();
+    }
+    // ✨ هنا تحدد النسب لكل مادة
+ 
+animateProgress("bar1", 1); // باسم 40%ا
+animateProgress("bar2", 1); // جاسم 40%
+animateProgress("bar3", 1); // سجاد 40%
+animateProgress("bar4", 1); // سما  40%
+animateProgress("bar5", 1); // عباس 40%
+animateProgress("bar6", 1); // عقيل 40%
+animateProgress("bar7", 1); // قاسم 40%
+animateProgress("bar8", 1); // كاضم 40%
+animateProgress("bar9", 1); // كرار 40%
+animateProgress("bar10", 1); // مجتبى 40%
+animateProgress("bar11", 1); // محسن 40%
+animateProgress("bar12", 1); // محمد 40%
+animateProgress("bar13", 1); // مسلم 40
+animateProgress("bar14", 1); // مصطفى 40%
+animateProgress("bar15", 1); // مهمين 40%
+animateProgress("bar16", 1); // مود 40%
+animateProgress("bar17", 1); // موسى 50%
+animateProgress("bar18", 1); // مومن 40%
+animateProgress("bar19", 1); // وافي 40%
+animateProgress("bar20", 1); // علي 40%
+animateProgress("bar21", 1); // رسول 40%
+animateProgress("bar22", 1); // جبار 40%
+animateProgress("bar23", 1); // عبدالله 40%
+animateProgress("bar24", 1); // صلاح 40%
+animateProgress("bar25", 1); // مهدي 40%
+animateProgress("bar26", 1); // جبر 40%
+animateProgress("bar27", 1); // علاء 40%
+animateProgress("bar28", 1); // عدنان 40%
+animateProgress("bar29", 1); // سيف 40%
+animateProgress("bar30", 1); // موفق 40%
+animateProgress("bar31", 1); // نواف 40%
+animateProgress("bar32", 1); // مزعل 40
+animateProgress("bar33", 1); // جميل 40%
+animateProgress("bar34", 1); // صبار 40%
+animateProgress("bar35", 1); // امجد 40%
+</script>
 </body>
 </html>
